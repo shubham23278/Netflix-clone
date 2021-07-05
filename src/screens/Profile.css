@@ -1,0 +1,140 @@
+.profile{
+    min-height: 100vh;
+    color: #fff;
+}
+
+.profile__body{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: auto;
+    padding-top: 8%;
+    
+}
+
+.profile__body > h1{
+    font-size: 60px;
+    font-weight: 400;
+    border-bottom: 1px solid #282c2d;
+    margin-bottom: 20px;
+}
+
+.profile__info{
+    display: flex;
+}
+
+.profile__membership{
+    text-align: center;
+}
+
+.profile__membership > h2{
+    color: rgb(218, 218, 218);
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+}
+
+.profile__membership > button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #e50914;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.profile__info > img{
+    height: 100px;
+}
+
+.profile__details{
+    color: #fff;
+    margin-left: 25px;
+    flex: 1;
+}
+
+.profile__detailsRow{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+.profile__detailsRow > h2{
+    font-size: 17px;
+}
+
+.profile__detailsRow > p {
+    color: white;
+}
+
+.profile__detailsRow > p:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.profile__plans{
+    margin-top: 50px;
+}
+
+.profile__plans > h3{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    padding-bottom: 10px;
+}
+
+.profile__signOut{
+    padding: 10px 20px;
+    font-size: 1rem;
+    margin-top: 5%;
+    width: 100%;
+    color: #fff;
+    background-color: #e50914;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+}
+
+@media(max-width: 1036px){
+    .profile__body{
+        width: 80%;
+    }
+}
+
+@media(max-width: 880px){
+    .profile__body{
+        width: 95%;
+    }
+
+    .profile__body > h1{
+        margin-top: 32px;
+    }
+}
+
+@media(max-width: 767px){
+    .profile__info{
+        flex-direction: column;
+    }
+
+    .profile__membership{
+        margin-bottom: 32px;
+        margin-top: 22px;
+    }
+}
+
+@media(max-width: 667px){
+    .profile__body > h1{
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .profile__detailsRow > h2{
+        font-size: 15px;
+        flex: .8;
+    }
+
+    .profile__detailsRow > p{
+        font-size: 15px;
+        flex: .7;
+    }
+}
